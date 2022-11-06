@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PageNavigation.BitesPage" Title="Quick Bites">
+ <Grid>
+    <StackLayout Margin="0,25,0,0" VerticalOptions="Start" Orientation="Vertical" Spacing="15" >
+    <Frame OutlineColor="Black" Margin="10">
+    <StackLayout VerticalOptions="Start" Orientation="Vertical" Spacing="15" >
+        <Image Source="bagel.png" Aspect="AspectFill" HeightRequest="200" Margin="10"/>
+        <Label Text="       Bagel          -        $1.50" FontSize="23" TextColor="Black" HorizontalOptions="Start" Margin="10"/>
+    </StackLayout>
+    </Frame>
+    <Frame OutlineColor="Black" Margin="10">
+        <StackLayout VerticalOptions="Start" Orientation="Vertical" Spacing="15" >
+            <Image Source="muffin.png" Aspect="AspectFill" HeightRequest="200" Margin="10"/>
+            <Label Text="  Eggs Bennedict      -     $6.50" FontSize="23" TextColor="Black" HorizontalOptions="Start" Margin="10"/>
+        </StackLayout>
+    </Frame>
+    </StackLayout>
+</Grid>
+
+</ContentPage>  

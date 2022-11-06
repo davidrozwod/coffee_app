@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PageNavigation.HotPage" Title="Hot Drinks">
+    <StackLayout Margin="0,20,0,0" VerticalOptions="Start" Orientation="Vertical" Spacing="15">
+        <Frame OutlineColor="Black" Margin="10">
+            <Label Text="Blonde Cafe Latte                $3.75" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+        </Frame>
+        <Frame OutlineColor="Black" Margin="10">
+            <Label Text="Caramel Macchiato             $4.25" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+        </Frame>
+        <Frame OutlineColor="Black" Margin="10">
+            <Label Text="Skinny Mocha                      $4.00" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+        </Frame>
+        <Frame OutlineColor="Black" Margin="10">
+            <Label Text="Hot Coffee                            $3.25" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+        </Frame>
+        <Frame OutlineColor="Black" Margin="10">
+            <Label Text="Irish Coffee                           $4.25" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+        </Frame>
+        <Frame OutlineColor="Black" Margin="10">
+            <Label Text="Flat White                             $3.00" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+        </Frame>
+        <Frame OutlineColor="Black" Margin="10">
+            <Label Text="Long Black                            $2.75" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+        </Frame>
+    </StackLayout>
+</ContentPage>  

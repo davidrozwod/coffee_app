@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PageNavigation.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <ContentPage Title="Menu" IconImageSource="icon_menu.png">
+        <Grid>
+            <StackLayout Margin="0,-500,0,0" VerticalOptions="CenterAndExpand" Orientation="Vertical" Spacing="30">
+                <Image Source="logo.png" VerticalOptions="Start" Margin="30" Aspect="AspectFit"/>
+            </StackLayout>
+            <StackLayout Margin="16,0,0,15" VerticalOptions="EndAndExpand" Orientation="Vertical" Spacing="30">
+                <Button FontSize="22" Text ="Espresso" TextColor="Black"  BackgroundColor="White" CornerRadius="5" WidthRequest="360" HeightRequest="100" HorizontalOptions="Start" BorderWidth="1" BorderColor="Black" Clicked="NavigateButton_OnClicked">
+                </Button>
+                <Button FontSize="22" Text ="Hot Drinks" TextColor="Black"  BackgroundColor="White" CornerRadius="5" WidthRequest="360" HeightRequest="100" HorizontalOptions="Start" BorderWidth="1" BorderColor="Black" Clicked="NavigateButton_OnClicked">
+                </Button>
+                <Button FontSize="22" Text ="Cold Drinks" TextColor="Black"  BackgroundColor="White" CornerRadius="5" WidthRequest="360" HeightRequest="100" HorizontalOptions="Start" BorderWidth="1" BorderColor="Black" Clicked="NavigateButton_OnClicked">
+            </Button>
+                <Button FontSize="22" Text ="Quick Bites" TextColor="Black"  BackgroundColor="White" CornerRadius="5" WidthRequest="360" HeightRequest="100" HorizontalOptions="Start" BorderWidth="1" BorderColor="Black" Clicked="NavigateButton_OnClicked">
+             </Button>
+            </StackLayout>
+      </Grid>        
+    </ContentPage>
+
+    <ContentPage Title="About" IconImageSource="about_menu.png">
+        <Grid>
+            <StackLayout Margin="0,0,0,0" VerticalOptions="Start" Orientation="Vertical" Spacing="10">
+                <Image Source="bg.png" VerticalOptions="Start" Aspect="AspectFit"/>
+            </StackLayout>
+            <StackLayout Margin="25,255,0,0" VerticalOptions="Start" Orientation="Vertical" Spacing="1">
+                <Label Text="Jules Cafe" FontSize="50" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Margin="25,370,0,0" VerticalOptions="Start" Orientation="Vertical" Spacing="1">
+                <Label Text="4A Kent Street" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+                <Label Text="Newmarket" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+                <Label Text="Auckland" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+                <Label Text="1023" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+            </StackLayout>
+            <StackLayout Margin="25,550,0,0" VerticalOptions="Start" Orientation="Vertical" Spacing="1">
+                <Label Text="+64 9 444 555" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+            </StackLayout>
+            <StackLayout Margin="25,620,0,0" VerticalOptions="Start" Orientation="Vertical" Spacing="1">
+                <Label Text="info@julescafe.co.nz" FontSize="23" TextColor="Black" HorizontalOptions="Start"/>
+            </StackLayout>
+            <StackLayout Margin="25,680,0,0" HorizontalOptions="Start" Orientation="Horizontal" Spacing="20">
+                <ImageButton Source="fb.png" VerticalOptions="Start" Aspect="AspectFit" WidthRequest="64" Clicked="FbButtonClicked"/>
+                <ImageButton Source="insta.png" VerticalOptions="Start" Aspect="AspectFit" WidthRequest="64" Clicked="InstaButtonClicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage>
+
+
+
+    <ContentPage Title="Map" IconImageSource="map.png"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+            <maps:Map VerticalOptions="FillAndExpand">
+            <x:Arguments>
+                <maps:MapSpan>
+                    <x:Arguments>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>-36.867838858965904</x:Double>
+                                <x:Double>174.77681224907377</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                        <x:Double>0.01</x:Double>
+                        <x:Double>0.01</x:Double>
+                    </x:Arguments>
+                </maps:MapSpan>
+            </x:Arguments>
+            <maps:Map.Pins>
+                <maps:Pin Label="Jules Cafe"
+                       Address="4 Kent Street, Newmarket 1061"
+                       Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>-36.867838858965904</x:Double>
+                                <x:Double>174.77681224907377</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+            </maps:Map.Pins>
+        </maps:Map>    
+    </ContentPage>
+</TabbedPage>
